@@ -39,7 +39,7 @@ module.exports = function() {
   // require("JSSoundRecorder/js/sequencer");
   // require("JSSoundRecorder/js/drone");
 
-  if (!iwindow.$) {
+  if (!window.$) {
     window.$ = i => document.querySelectorAll(i);
   }
 
