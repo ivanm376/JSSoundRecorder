@@ -51,4 +51,4 @@ function SpectrumDisplay(rootElement, divElement)
     };
 }
 
-window.SpectrumWorker = SpectrumWorker;
+window.SpectrumDisplay = SpectrumDisplay;
