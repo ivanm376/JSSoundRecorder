@@ -45,3 +45,5 @@ function SpectrumWorker()
     
     
 }
+
+window.SpectrumWorker = SpectrumWorker;

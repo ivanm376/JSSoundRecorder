@@ -121,3 +121,5 @@ function ComputeSpectrum(data,  width,
 
    return true;
 }
+
+window.ComputeSpectrum = ComputeSpectrum;

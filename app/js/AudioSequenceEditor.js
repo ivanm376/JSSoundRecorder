@@ -244,8 +244,9 @@ function AudioLayerSequenceEditor(elementContext)
         {
             this.eventHost.previousMouseX = this.eventHost.mouseX;
             this.eventHost.previousMouseY = this.eventHost.mouseY;
-            this.eventHost.mouseX = e.clientX - this.offsetLeft;
-            this.eventHost.mouseY = e.clientY - this.offsetTop;
+            var rect = this.getBoundingClientRect();
+            this.eventHost.mouseX = e.clientX - rect.left;
+            this.eventHost.mouseY = e.clientY - rect.top;
             var mouseXDelta = this.eventHost.mouseX - this.eventHost.previousMouseX;
             
             if (this.eventHost.mouseDown && this.eventHost.movementActive == false)
@@ -958,3 +959,5 @@ window.addEventListener("keyup", function(e)
         focusOnAudioLayerSequenceEditor.movementActive = false;
     }
 }, true);
+
+window.AudioLayerSequenceEditor = AudioLayerSequenceEditor;

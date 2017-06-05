@@ -50,3 +50,5 @@ function SpectrumDisplay(rootElement, divElement)
         canvasContext.fillText(Math.round(this.min) + " db",0, this.canvasRef.height);
     };
 }
+
+window.SpectrumWorker = SpectrumWorker;

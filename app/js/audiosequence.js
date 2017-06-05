@@ -340,3 +340,5 @@ function CreateNewAudioSequence(sampleRate, data)
     }
     return sequence;
 }
+
+window.CreateNewAudioSequence = CreateNewAudioSequence;

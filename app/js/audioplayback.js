@@ -240,3 +240,5 @@ function AudioPlayback()
     this.lastPlaybackUpdate = 0;
     
 }
+
+window.AudioPlayback = AudioPlayback;

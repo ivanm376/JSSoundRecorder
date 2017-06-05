@@ -74,3 +74,5 @@ function FileDropbox()
     
     
 };
+
+window.FileDropbox = FileDropbox;

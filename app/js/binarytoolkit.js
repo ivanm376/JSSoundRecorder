@@ -192,3 +192,6 @@ function BinaryWriter(estimatedSize)
        }
    };
 }
+
+window.BinaryReader = BinaryReader;
+window.BinaryWriter = BinaryWriter;

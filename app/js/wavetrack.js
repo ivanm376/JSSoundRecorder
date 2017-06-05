@@ -285,3 +285,5 @@ function printComplexArray(a)
     }
     console.log("===============");
 }
+
+window.WaveTrack = WaveTrack;

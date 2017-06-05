@@ -564,3 +564,5 @@ function initializeAudioLayerControls()
 }
 
 var activeAudioLayerControl = undefined;
+
+module.exports = audioLayerControl;
