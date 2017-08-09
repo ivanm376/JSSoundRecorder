@@ -40,7 +40,9 @@ module.exports = function() {
   // require("JSSoundRecorder/js/drone");
 
   if (!window.$) {
-    window.$ = i => document.querySelectorAll(i);
+    window.$ = function(i) {
+      return document.querySelectorAll(i);
+    };
   }
 
   return {
