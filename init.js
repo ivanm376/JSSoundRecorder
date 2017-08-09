@@ -23,7 +23,7 @@ module.exports = function() {
   require("JSSoundRecorder/app/js/filedropbox");
   require("JSSoundRecorder/app/js/fft");
 
-  const audioLayerControl = require("JSSoundRecorder/app/js/audioLayerControl");
+  var audioLayerControl = require("JSSoundRecorder/app/js/audioLayerControl");
 
   require("JSSoundRecorder/app/js/audiosequence");
   require("JSSoundRecorder/app/js/AudioSequenceEditor");
@@ -46,6 +46,6 @@ module.exports = function() {
   }
 
   return {
-    audioLayerControl
+    audioLayerControl: audioLayerControl,
   }
 }
